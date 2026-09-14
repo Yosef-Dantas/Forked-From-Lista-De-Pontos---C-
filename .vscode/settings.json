@@ -1,0 +1,14 @@
+{
+  "files.exclude": {
+    "**/*.dll": true,
+    "**/*.obj": true,
+    "**/*.exe": true,
+    "**/*.ilk": true,
+    "**/*.pdb": true
+  },
+  "code-runner.runInTerminal": true,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.executorMap": {
+    "cpp": "cd $workspaceRoot && .\\rodar.bat"
+  }
+}
