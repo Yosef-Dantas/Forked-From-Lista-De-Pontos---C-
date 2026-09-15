@@ -1,0 +1,6 @@
+*.exe
+*.obj
+*.dll
+*.pdb
+*.ilk
+tempCodeRunnerFile.*
