@@ -1,6 +1,51 @@
+# ==========================================
+# .gitignore para C++ e OpenCV
+# ==========================================
+
+# 1. Pastas de compilação e diretórios de saída
+/build/
+/out/
+/bin/
+/obj/
+/Debug/
+/Release/
+/x64/
+/x86/
+
+# 2. Arquivos binários, objetos e bibliotecas dinâmicas
 *.exe
-*.obj
 *.dll
+*.obj
+*.o
+*.a
+*.lib
+*.so
+*.dylib
+
+# 3. Arquivos de depuração do compilador
 *.pdb
 *.ilk
+*.idb
+*.map
+*.exp
+
+# 4. Bibliotecas específicas do OpenCV 
+# (Ignora as DLLs do OpenCV caso você as copie para a pasta do projeto)
+opencv_*.dll
+opencv_*.lib
+
+# 5. Configurações de IDEs (Visual Studio e VS Code)
+.vs/
+*.suo
+*.user
+*.sln.docstates
+
+# Nota: Caso você queira que suas configurações de ambiente (.vscode/tasks.json, 
+# launch.json) subam para o GitHub, apague a linha abaixo:
+.vscode/
+
+# 6. Extensões e arquivos temporários (ex: Code Runner)
 tempCodeRunnerFile.*
+*.log
+*.tmp
+*.swp
